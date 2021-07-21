@@ -6,7 +6,7 @@ function Search() {
           type="text"
           id="searchBar"
           value="Search for any IP address or domain"
-        ></input>
+        />
         <button className="button" type="submit">
           >
         </button>
