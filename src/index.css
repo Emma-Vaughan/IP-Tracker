@@ -3,6 +3,10 @@ body {
   font-family: "Rubik", sans-serif;
 }
 
+.App {
+  height: 100vh;
+}
+
 .headerImage {
   background-image: url("./Images/pattern-bg.png");
   height: 250px;
@@ -43,4 +47,43 @@ body {
   width: 50px;
   font-size: 18px;
   cursor: pointer;
+}
+
+.middleBar {
+  height: 130px;
+  width: 70%;
+  left: 15%;
+  margin: 0 auto;
+  margin-top: 35px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  z-index: 2;
+  border-radius: 10px;
+}
+
+.middleBar hr {
+  margin: 0;
+  margin-top: 25px;
+  background-color: black;
+  border: none;
+}
+
+.IP,
+.location,
+.timezone,
+.ISP {
+  width: 15%;
+  text-align: left;
+}
+
+.map {
+  background-color: yellow;
+  height: 100%;
+  z-index: 1;
+}
+
+.map p {
+  margin: 0;
 }
