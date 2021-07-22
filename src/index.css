@@ -66,8 +66,22 @@ body {
 .middleBar hr {
   margin: 0;
   margin-top: 25px;
-  background-color: black;
+  background-color: #969696;
   border: none;
+}
+
+.middleBar h3 {
+  color: #969696;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.middleBar p {
+  color: #2b2b2b;
+  font-weight: 700;
+  font-size: 22px;
+  margin: 0;
 }
 
 .IP,
@@ -76,6 +90,7 @@ body {
 .ISP {
   width: 15%;
   text-align: left;
+  margin-top: 15px;
 }
 
 .map {
