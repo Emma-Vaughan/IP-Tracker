@@ -1,24 +1,35 @@
-function MiddleBar() {
+function MiddleBar(data) {
+  console.log(data);
+
+  const ipAddress = data.data.ip;
+  const city = data.data.location.city;
+  const location = data.data.location.country;
+  const postcode = data.data.location.postalCode;
+  const timezone = data.data.location.timezone;
+  const ISP = data.data.isp;
+
   return (
     <div className="middleBar">
       <div className="IP">
         <h3>IP ADDRESS</h3>
-        <p>IP Address</p>
+        <p>{ipAddress}</p>
       </div>
       <hr width="1" size="75" />
       <div className="location">
         <h3>LOCATION</h3>
-        <p>Location</p>
+        <p>
+          {city}, {location} {postcode}
+        </p>
       </div>
       <hr width="1" size="75" />
       <div className="timezone">
         <h3>TIMEZONE</h3>
-        <p>Timezone</p>
+        <p>{timezone}</p>
       </div>
       <hr width="1" size="75" />
       <div className="ISP">
         <h3>ISP</h3>
-        <p>ISP</p>
+        <p>{ISP}</p>
       </div>
     </div>
   );
