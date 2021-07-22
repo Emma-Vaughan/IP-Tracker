@@ -1,9 +1,9 @@
-import API from "../../API";
+import api from "../../API";
 
 function Search({ setData }) {
   function handleClick(e) {
     e.preventDefault();
-    fetch("https://geo.ipify.org/api/v1?apiKey=" + API + "&ipAddress=")
+    fetch("https://geo.ipify.org/api/v1?apiKey=" + api + "&ipAddress=")
       .then((response) => response.json())
       .then((response) => {
         setData(response);

@@ -1,6 +1,28 @@
 function MiddleBar(data) {
   console.log(data);
 
+  if (data.data === "") {
+    return (
+      <div className="middleBar">
+        <div className="IP">
+          <h3>IP ADDRESS</h3>
+        </div>
+        <hr width="1" size="75" />
+        <div className="location">
+          <h3>LOCATION</h3>
+        </div>
+        <hr width="1" size="75" />
+        <div className="timezone">
+          <h3>TIMEZONE</h3>
+        </div>
+        <hr width="1" size="75" />
+        <div className="ISP">
+          <h3>ISP</h3>
+        </div>
+      </div>
+    );
+  }
+
   const ipAddress = data.data.ip;
   const city = data.data.location.city;
   const location = data.data.location.country;
