@@ -1,4 +1,5 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import MapReload from "./MapReload";
 
 function Map({ data }) {
   let lat;
@@ -23,6 +24,7 @@ function Map({ data }) {
           A pretty CSS3 popup. <br /> Easily customizable.
         </Popup>
       </Marker>
+      <MapReload lat={lat} lng={lng} />
     </MapContainer>
   );
 }
