@@ -1,7 +1,5 @@
-function MiddleBar(data) {
-  console.log(data);
-
-  if (data.data === "") {
+function MiddleBar({ data }) {
+  if (data === "") {
     return (
       <div className="middleBar">
         <div className="IP">
@@ -23,12 +21,12 @@ function MiddleBar(data) {
     );
   }
 
-  const ipAddress = data.data.ip;
-  const city = data.data.location.city;
-  const location = data.data.location.country;
-  const postcode = data.data.location.postalCode;
-  const timezone = data.data.location.timezone;
-  const ISP = data.data.isp;
+  const ipAddress = data.ip;
+  const city = data.location.city;
+  const location = data.location.country;
+  const postcode = data.location.postalCode;
+  const timezone = data.location.timezone;
+  const ISP = data.isp;
 
   return (
     <div className="middleBar">

@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <MainHeader data={data} setData={setData} />
-      <Map />
+      <Map data={data} setData={setData} />
     </div>
   );
 }
