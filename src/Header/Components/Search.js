@@ -1,4 +1,4 @@
-import api from "../../API";
+import { api } from "../../API";
 
 function Search({ setData }) {
   function handleClick(e) {

@@ -93,12 +93,12 @@ body {
   margin-top: 15px;
 }
 
-.map {
-  background-color: yellow;
+.leaflet-container {
   height: 100%;
+  width: 100%;
   z-index: 1;
 }
 
-.map p {
+#mapid p {
   margin: 0;
 }
