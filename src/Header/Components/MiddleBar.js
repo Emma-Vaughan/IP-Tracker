@@ -22,7 +22,7 @@ function MiddleBar({ data }) {
   }
 
   const { city, location, postcode, timezone } = data.location;
-  const { ip: ipAddress, ISP } = data;
+  const { ip: ipAddress, isp } = data;
 
   return (
     <div className="middleBar">
@@ -45,7 +45,7 @@ function MiddleBar({ data }) {
       <hr width="1" size="75" />
       <div className="ISP">
         <h3>ISP</h3>
-        <p>{ISP}</p>
+        <p>{isp}</p>
       </div>
     </div>
   );
