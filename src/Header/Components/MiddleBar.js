@@ -21,12 +21,8 @@ function MiddleBar({ data }) {
     );
   }
 
-  const ipAddress = data.ip;
-  const city = data.location.city;
-  const location = data.location.country;
-  const postcode = data.location.postalCode;
-  const timezone = data.location.timezone;
-  const ISP = data.isp;
+  const { city, location, postcode, timezone } = data.location;
+  const { ip: ipAddress, ISP } = data;
 
   return (
     <div className="middleBar">

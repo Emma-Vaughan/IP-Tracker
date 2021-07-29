@@ -2,16 +2,10 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import MapReload from "./MapReload";
 
 function Map({ data }) {
-  let lat;
-  let lng;
-
-  if (data === "") {
-    lat = 37.773972;
-    lng = -122.431297;
-  } else {
-    lat = data.location.lat;
-    lng = data.location.lng;
-  }
+  const [lat, lng] =
+    data === ""
+      ? [37.773972, -122.431297]
+      : [data.location.lat, data.location.lng];
 
   return (
     <MapContainer center={[lat, lng]} zoom={13} scrollWheelZoom={false}>
