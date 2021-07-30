@@ -38,6 +38,10 @@ body {
   cursor: pointer;
 }
 
+#searchBar:focus {
+  outline: none;
+}
+
 .button {
   height: 52px;
   border-radius: 0 10px 10px 0;
