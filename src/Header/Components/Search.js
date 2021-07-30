@@ -1,8 +1,16 @@
 import { api } from "../../API";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function Search({ setData }) {
   const [input, setInput] = useState("");
+
+  useEffect(() => {
+    fetch("https://geo.ipify.org/api/v1?apiKey=" + api + "&ipAddress=")
+      .then((response) => response.json())
+      .then((response) => {
+        setData(response);
+      });
+  }, []);
 
   function handleClick(e) {
     e.preventDefault();
