@@ -1,6 +1,8 @@
 body {
   margin: 0;
   font-family: "Rubik", sans-serif;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .App {
